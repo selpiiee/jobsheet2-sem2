@@ -45,16 +45,8 @@ public class Student21 {
     }
 
     public static void main(String[] args) {
-        StudentMain21 mhs1 = new StudentMain21();
-        mhs1.Name = "Muhammad Ali Farhan";
-        mhs1.nim = "2241720171";
-        mhs1.Class = "SI 2J";
-        mhs1.gpa = 3.55;
-
-        mhs1.displayInformation();
-        mhs1.changeClass("SI 2K");
-        mhs1.changeGPA(3.60);
-        mhs1.displayInformation();
+        Student21 mhsSelvy = new Student21("Selvy Nur Khoffifa", "254107060169", 3.75, "SIB 1G");
+        mhsSelvy.displayInformation();
 
         Student21 mhs2 = new Student21("Annisa Nabila", "2141720160", 3.25, "TI 2L");
         mhs2.changeGPA(3.30);
