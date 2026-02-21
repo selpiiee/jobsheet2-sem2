@@ -6,11 +6,18 @@ public class Student21 {
     String Class;
     double gpa;
 
+    public Student21 (String nm, String nim, double gpa, String cls) {
+        Name = nm;
+        this.nim = nim;
+        this.gpa = gpa;
+        Class = cls;
+    }
+
     void displayInformation() {
-        System.out.println("Name : " + Name);
-        System.out.println("NIM : " + nim);
-        System.out.println("Class : " + Class);
-        System.out.println("GPA : " + gpa);
+        System.out.println("Name\t: " + Name);
+        System.out.println("NIM\t: " + nim);
+        System.out.println("Class\t: " + Class);
+        System.out.println("GPA\t: " + gpa);
     }
 
     void changeClass(String newClass) {
@@ -35,5 +42,22 @@ public class Student21 {
         } else {
             return "Poor performance";
         }
+    }
+
+    public static void main(String[] args) {
+        StudentMain21 mhs1 = new StudentMain21();
+        mhs1.Name = "Muhammad Ali Farhan";
+        mhs1.nim = "2241720171";
+        mhs1.Class = "SI 2J";
+        mhs1.gpa = 3.55;
+
+        mhs1.displayInformation();
+        mhs1.changeClass("SI 2K");
+        mhs1.changeGPA(3.60);
+        mhs1.displayInformation();
+
+        Student21 mhs2 = new Student21("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+        mhs2.changeGPA(3.30);
+        mhs2.displayInformation();
     }
 }
